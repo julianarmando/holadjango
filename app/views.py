@@ -16,3 +16,10 @@ def hola(request):
 
 def numero(request, numerito):
 	return HttpResponse("Hola el numero es %s" % numerito)
+
+def plantilla(request):
+	hola = "Soy una variable desde atras"
+	contenido = "digamos que soy el contenido"
+	titulo = "soy el titulo de la pagina"
+	response = render_to_response('hola.html',{'result':hola, 'contenido':contenido, 'title':titulo})
+	return HttpResponse(response)
