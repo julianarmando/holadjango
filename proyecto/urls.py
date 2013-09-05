@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^hola/$', 'app.views.hola', name='hola'),
     url(r'^numero/(\d+)$', 'app.views.numero', name='numero'),
     url(r'^plantilla/$', 'app.views.plantilla', name='plantilla'),
+    url(r'^masdatos/$', 'app.views.masdatos', name='masdatos'),
     # url(r'^proyecto/', include('proyecto.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
